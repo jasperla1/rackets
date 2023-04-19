@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rackets"
+version = "0.1.0"
+description = ""
+authors = ["jasper <jasper20.10@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.95.1"}
+sqlalchemy = "^2.0.9"
+psycopg2-binary = "^2.9.6"
+uvicorn = "^0.21.1"
+requests = "^2.28.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
